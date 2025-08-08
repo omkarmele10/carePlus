@@ -1,0 +1,105 @@
+<!-- this include html css  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+    }
+    #outer_box{
+      width:100vw;
+      height:100vh;
+    }
+    #inner_box{
+      width: 400px;
+      margin:0 auto;
+      position:relative;
+      top:40%;
+      transform: translateY(-50%);     
+      background-color: white;
+      padding:20px 40px;
+      border-radius:10px;
+      backdrop-filter:blur(8px);
+      box-shadow:2px 2px 5px black;
+      z-index:2;
+    }
+    .login_header h1{
+      font-size:2rem;
+    }
+    .login_body{
+      margin: 20px 0;
+    }
+    .login_body p{
+      margin: 10px 0;
+    }
+    .login_body p label{
+      display: block;
+      font-weight:bold;
+    }
+    .login_body p input{
+      width:100%;
+      padding :10px;
+      border:2px solid black;
+      border-radius:4px;
+      font-size:1rem;
+      margin-top:4px;
+    }
+    .login_body p input[type="submit"]{
+      background-color: #3489db;
+      border :none;
+      color:white;
+      cursor:pointer;
+    }
+    .login_body p input[type="submit"]:hover{
+      background-color: #166ab9;
+    }
+    .login_footer p{
+      color:#555;
+      text-align:center;
+    }
+    .login_footer a{
+      color:#2773a5;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="outer_box">
+    <div id="inner_box">
+      <header class ="login_header">
+      <i class="fa-solid fa-backward" style="padding:10px"></i>
+      <br>
+        <h1> Login</h1>
+        <!-- <p>it just take 30 seconds</p> -->
+      </header>
+      <main class="login_body">
+        <form action="#" method ="get">
+          <p>
+            <label for="username">Username</label><input type="text" id="name" placeholder="enter username">
+          </p>
+          <p>
+            <label for="email">Email</label><input type="email" id="email" placeholder="enter email">
+          </p>
+           <p>
+            <label for="password">Password</label><input type="password" id="password" placeholder="enter password">
+          </p>
+          <p>
+          <input type="submit" id="submit" value="Login">
+          </p>
+        </form>
+      </main>
+      <footer class="login_footer">
+        <p> Create Account ? <a href="signupWithCSS.html">SignUp</a> </p>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>
